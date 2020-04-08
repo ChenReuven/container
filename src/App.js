@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Switch, Route, Redirect } from 'react-router-dom';
+import {BrowserRouter, Redirect, Route, Switch} from 'react-router-dom';
 import AppHeader from './AppHeader';
 import MicroFrontend from './MicroFrontend';
 import About from './About';
@@ -35,6 +35,7 @@ const App = () => (
         <Route exact path="/restaurant/:id" component={Restaurant} />
         <Route exact path="/random" render={Random} />
         <Route exact path="/about" render={About} />
+        {/*<Route exact path="/about" component={} />*/}
       </Switch>
     </React.Fragment>
   </BrowserRouter>
